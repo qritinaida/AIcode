@@ -218,7 +218,14 @@
     padding:4px 9px;border-radius:6px;border:1px solid var(--teal-dim);
   }
   .about-name{font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:4px;}
-  .about-role{font-family:var(--font-mono);color:var(--amber);font-size:0.88rem;margin-bottom:18px;}
+  .about-role{font-family:var(--font-mono);color:var(--amber);font-size:0.88rem;margin-bottom:12px;}
+  .about-edu{display:flex;flex-direction:column;gap:4px;margin-bottom:18px;}
+  .about-edu span{
+    font-size:0.86rem;color:var(--text-muted);padding-left:16px;position:relative;
+  }
+  .about-edu span::before{
+    content:"›";position:absolute;left:0;color:var(--teal);font-family:var(--font-mono);
+  }
   .about-bio{color:var(--text-muted);font-size:0.98rem;margin-bottom:22px;max-width:580px;}
   .about-links{display:flex;gap:12px;flex-wrap:wrap;}
   .about-links a{
@@ -374,8 +381,13 @@
           <span class="about-photo-tag">Creator</span>
         </div>
         <div>
-          <div class="about-name">ผู้จัดทำเว็บไซต์ AI Code Hub</div>
-          <div class="about-role">นักพัฒนา / ผู้รวบรวมโค้ด AI</div>
+          <div class="about-name">นางสาวสุภนิดา อรน้อม</div>
+          <div class="about-role">อายุ 21 ปี — นักศึกษาชั้นปีที่ 3</div>
+          <div class="about-edu">
+            <span>สาขาเทคโนโลยีสารสนเทศและนวัฒกรรมดิจิทัล</span>
+            <span>คณะวิทยาศาสตร์และเทคโนโลยี</span>
+            <span>มหาวิทยาลัยราชภัฏสงขลา</span>
+          </div>
           <p class="about-bio">
             เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมตัวอย่างโค้ดสำหรับการทำงานร่วมกับ AI ให้ผู้ที่สนใจสามารถนำไปศึกษาและต่อยอดได้ง่าย
             ตั้งแต่การเรียก API ของโมเดลภาษา การออกแบบพรอมป์ต ไปจนถึงการทำระบบค้นคืนข้อมูลเบื้องต้น
